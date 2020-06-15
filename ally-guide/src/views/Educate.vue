@@ -1,4 +1,4 @@
-<style>
+<style lang = "scss">
 body{
   background-color: #924235;
   padding: 0 10px;
@@ -150,34 +150,5 @@ What is Juneeteenth?     <i class="fa fa-plus"></i>
   <a img src = "" href = ""> Say their names </a>
   <a img src = "" href = ""> Black Healing </a>
 </div>
-
+</body>
 </template>
-<script>
-$(document).ready(function() {
-  $(".set > a").on("click", function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this)
-        .siblings(".content")
-        .slideUp(200);
-      $(".set > a i")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
-    } else {
-      $(".set > a i")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
-      $(this)
-        .find("i")
-        .removeClass("fa-plus")
-        .addClass("fa-minus");
-      $(".set > a").removeClass("active");
-      $(this).addClass("active");
-      $(".content").slideUp(200);
-      $(this)
-        .siblings(".content")
-        .slideDown(200);
-    }
-  });
-});
-</script>
